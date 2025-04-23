@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+    <link rel="stylesheet" href="css/styel.css">
+    <title>Todo List | Local Stograge</title>
+</head>
+<body onload="fetchtodo()" >
+    <div class="container">
+        <div class="jumbotron  bg-dark text-light mt-5 text-center">
+          <i id="heart" class="fas fa-2x text-danger animated pulse infinite fa-heartbeat"></i>
+           <div class="eye"></div>
+           <div class="eye"></div>
+            <h2 class="animated bounceIn">Todo With Local Storage</h2>
+               <div class="row d-flex justify-content-center">
+                   <div class="col-md-7">
+                        <div class="wrap">
+                            <i id="add-todo" class="ic fas fa-plus"></i>
+                            <input type="text" id="name"> 
+                        </div>
+                   </div>
+                   <div class="">
+                       <button id="remove-todo" class="btn animated bounceInDown  btn-danger rounded-circle" ><i class="far fa-trash-alt"></i></button>
+                   </div>
+                  
+               </div>
+               <div id="section" class="row mt-4">
+                   <div class="col-md-12">
+                       <ul id="list" class="list-unstyled">
+                           <li><input id="check"  type="checkbox" name="todo" id="" checked placeholder="Add your todos!" ><label>Hey There Be Consistent</label></li>
+                       </ul>
+                   </div>
+               </div>
+        </div> 
+        <footer>
+           <p class="lead text-light btn-sm">usage:- Just Keep Holding Plus Sign Then Add Your Todos & to remove click on cross icon then del icon</p>
+            <p>Note:- This Todo Uses Your Browser Cache For Storage, Chances are hign that it my not work on older browser</p>
+        </footer>   
+    </div>
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

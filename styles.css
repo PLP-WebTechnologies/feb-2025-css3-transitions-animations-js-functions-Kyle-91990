@@ -1,0 +1,82 @@
+:root {
+    --bg-light: #ffffff;
+    --text-light: #333333;
+    --btn-light: #4CAF50;
+    --bg-dark: #333333;
+    --text-dark: #ffffff;
+    --btn-dark: #45a049;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.animation-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-light);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.dark button {
+    background-color: var(--btn-dark);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.animated-element {
+    transition: transform 0.3s ease;
+}
+
+.animated-element:hover {
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.bounce {
+    animation: bounce 0.5s ease;
+}
+
+.rotate {
+    animation: rotate 2s linear infinite;
+}
